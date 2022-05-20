@@ -1,0 +1,56 @@
+img {
+    width: 100%;
+}
+
+hr {
+    margin: 50px 0px !important;
+}
+
+.sec-wines {
+    padding-top: 30px;
+}
+
+.sec-wines hr {
+    margin: 10px 0 5px !important;
+}
+
+.sec-bottom {
+    padding-top: 50px;
+}
+
+.sec-hero {
+    background: url("italy_vineyard.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+.sec-hero .linear-graident {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 80%;
+}
+
+.sec-hero2 {
+    background: url("wine_storage.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+}
+#err{
+    padding-left: 16px;
+    display: none;
+}
+.modal-content{
+    width: fit-content;
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: row!important;
+}
+.navbar-nav .nav-item{
+    margin-right: 10px;
+}
+.container span{
+    text-align: center!important;
+    padding-bottom: 5px!important;
+}

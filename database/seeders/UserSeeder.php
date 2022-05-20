@@ -18,12 +18,22 @@ class UserSeeder extends Seeder
     public function run()
     {
         $faker = Factory::create();
-        $user = User::create([
-            'name' => $faker->name(),
-            'email' => 'admin@admin.com',
-            'password' => Hash::make('1234567890'),
-        ]);
-        // display message
-        $this->command->info('User Created');
+
+        $users = [
+            [
+                'name' => $faker->name(),
+                'email' => 'admin@admin.com',
+                'password' => Hash::make('1234567890'),
+                'role' => 'staff',
+            ],
+            [
+                'name' => $faker->name(),
+                'email' => 'user@user.com',
+                'password' => Hash::make('1234567890'),
+                'role' => 'customer',
+            ],
+        ];
+
+        User::insert($users);
     }
 }
